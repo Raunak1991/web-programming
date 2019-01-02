@@ -1,0 +1,24 @@
+ <!-- 1 // then display its information
+    2 // As well as listing the names of all the attendees that will be at this event 
+    3 // Each of these attendee names will need to link to their person page
+    4 // You will also list the location of the event, said location's name, and a link to the location page
+-->
+<article>
+    <h1>Event</h1>
+    <p>{{events.title}}</p>
+
+   
+    <h3>Attendees </h3>
+    {{#each attendeeName}}
+    <ul>
+        <li><a href="/people/{{id}}">{{this.name}}</a></li>
+    </ul>
+    {{/each}}  
+    <h3>Location</h3>    
+    <p><a href="/locations/{{events.location}}">{{locationName}}</a></p>
+</article>
+
+
+
+
+

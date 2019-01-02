@@ -1,0 +1,35 @@
+<style>
+div {
+    border-radius: 5px;
+    background-color: #f2f2f2;
+    padding: 20px;
+}
+</style>
+<h1>Page 3</h1>
+<h1>Individual Note page</h1>
+<form method="POST"  id="individualForm">
+
+<ol id="noteData">
+   
+    <h3>Note Tiltle</h3>
+    <li id="note_Title" value={{{individualDta.title}}}>{{{individualDta.title}}}</li>
+    <h3>Note Summary </h3>
+    <li id="noteSummary" value={{{individualDta.summary}}}> {{{individualDta.summary }}}</li> <br>
+    <h3>Note date</h3>
+    <li  id="currDate" value={{{individualDta.date}}}> {{{individualDta.date}}}</li> <br>
+    <h3> Note Body</h3>
+    <li id="noteBody" value={{{individualDta.body}}}> {{{individualDta.body}}}</li> <br>
+    
+</ol>
+
+<div class="row">
+   <a value="next" type="submit" id="link_id"> Next note </a>
+    </div>
+</div>
+<div class="row">
+    <div class="col-sm-12 col-md-8">
+<a href="/">Link to first page</a>
+    </div>
+</div>
+</form>
+

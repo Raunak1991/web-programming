@@ -1,0 +1,16 @@
+<!--1// As well as listing all events that they will be attending
+  
+    2// then display their information
+   3 // As well as listing all events that they will be attending
+    4// Each of these events need to link to the event page, and show the event name-->
+<article class="people">
+    <h1>Person Name</h1>
+   <p>{{people.name}}</p>
+
+    <h3>Events person will be attending </h3>
+    {{#each events}}
+    <ul>
+        <li><a href="/events/{{this.id}}">{{this.title}}</a></li>
+    </ul>
+    {{/each}}
+</article>

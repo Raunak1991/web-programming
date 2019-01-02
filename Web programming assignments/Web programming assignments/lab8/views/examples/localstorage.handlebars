@@ -1,0 +1,33 @@
+<table class="table" id="localstorage-data">
+    <thead>
+    <tr>
+        <th>Key</th>
+        <th>Value</th>
+        <!--<th>Type After JSON Parse</th>-->
+    </tr>
+    </thead>
+    <tbody>
+    </tbody>
+</table>
+<form class="form form-horizontal" id="localstorage-form">
+    <!--<div class="form-group">
+        <label for="localstorage-key" class="col-sm-2 control-label">Input</label>
+        <div class="col-sm-10">
+            <input type="number" class="form-control" id="localstorage-key" placeholder="key_name">
+        </div>
+    </div>-->
+    <div class="form-group">
+        <label for="localstorage-value" class="col-sm-2 control-label">Input</label>
+        <div class="col-sm-10">
+            <input type="number" class="form-control" id="localstorage-value" placeholder="value">
+        </div>
+    </div>
+    <div class="form-group">
+        <div class="col-sm-offset-2 col-sm-10">
+            <button type="submit" class="btn btn-default" style="background:#F5F5DC">Submit</button>
+            <button type="button" class="btn btn-danger" id="clear-storage" style="background: #d4423c">Clear LocalStorage</button>
+        </div>
+    </div>
+</form>
+<div class="alert alert-danger hidden" id="form-alert">
+</div>

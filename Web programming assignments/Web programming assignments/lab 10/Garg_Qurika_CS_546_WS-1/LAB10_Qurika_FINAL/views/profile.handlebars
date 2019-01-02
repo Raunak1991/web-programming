@@ -1,0 +1,30 @@
+<h2 class="page-header">Profile</h2>
+{{#if errors}}
+      {{#each errors}}
+        <div class="alert alert-danger">{{msg}}</div>
+      {{/each}}
+{{/if}}
+	<div class="container">
+      <div class="header clearfix">
+        <nav>
+          <ul class="nav nav-pills pull-right">   
+            <li role="presentation"><a href="/login">Logout</a></li>
+          </ul>
+        </nav>
+   </div>
+<div class="form-group">
+     {{#if user}}
+<ul>
+  <li class="form-group">Username:  {{username}}</li>
+  <li class="form-group">FirstName: {{firstName}}</li>
+  <li class="form-group">Lastname:  {{lastname}}</li>
+  <li class="form-group">Profession:{{profession}}</li>
+  <li class="form-group">Bio: {{bio}}</li>
+</ul>
+  {{else}}
+  {{#each errors}}
+        <div class="alert alert-danger">{{msg}}</div>
+      {{/each}}
+   {{/if}}
+</div>
+</div>

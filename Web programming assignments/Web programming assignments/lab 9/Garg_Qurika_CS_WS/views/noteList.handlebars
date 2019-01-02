@@ -1,0 +1,18 @@
+<style>
+
+div {
+    border-radius: 5px;
+    background-color: #f2f2f2;
+    padding: 20px;
+}
+
+</style>
+<h1>All Note List : Page 1</h1>
+<div class="col-sm-12 col-md-6">
+    {{#each data}}
+    
+   <a href="{{this.title}}"> <h2>{{{this.title}}}</h2> </a>
+        <p> {{{ this.summary }}}</p> <br>
+ {{/each}}
+</div>
+

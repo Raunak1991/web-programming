@@ -1,0 +1,27 @@
+{
+  "name": "authentication",
+  "version": "1.0.0",
+  "description": "Simple authentication lab",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+     "start": "node app.js"
+  },
+  "author": "raunak",
+  "license": "ISC",
+  "dependencies": {
+    "bcryptjs": "*",
+    "body-parser": "^1.15.2",
+    "connect-flash": "^0.1.1",
+    "cookie-parser": "^1.4.3",
+    "express": "^4.14.0",
+    "express-handlebars": "^3.0.0",
+    "express-session": "^1.14.2",
+    "express-validator": "^3.0.0",
+    "node-uuid": "^1.4.7",
+    "passport": "^0.3.2",
+    "passport-http": "^0.3.0",
+    "passport-local": "^1.0.0",
+    "xss": "^0.2.13"
+  }
+}
